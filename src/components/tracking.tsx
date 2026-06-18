@@ -29,6 +29,9 @@ const Tracking = () => {
             With Finos CRM's robust automation tools, propel streamline your business operations,
             enhance customer relationships.
           </p>
+        </div>
+
+        <div className={styles.grid}>
           <div className={styles.copy}>
             <h3 className={styles.heading}>
               Streamlined and automated processes for managing potential customer leads
