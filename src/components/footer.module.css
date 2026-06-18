@@ -125,6 +125,10 @@
     gap: 22px;
   }
 
+  .column {
+    gap: 12px;
+  }
+
   .bottom {
     margin-top: 48px;
     justify-content: center;

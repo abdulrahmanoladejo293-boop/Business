@@ -185,8 +185,16 @@
     padding: 0 24px;
   }
 
+  .content {
+    gap: 24px;
+  }
+
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .imageWrapper {
+    max-width: 100%;
   }
 
   .header {
@@ -195,5 +203,23 @@
 
   .footer {
     margin-top: 32px;
+  }
+}
+
+@media (max-width: 540px) {
+  .header h2 {
+    font-size: 2.3rem;
+  }
+
+  .header p {
+    font-size: 0.95rem;
+  }
+
+  .container {
+    padding: 0 18px;
+  }
+
+  .card {
+    padding: 16px 18px;
   }
 }
