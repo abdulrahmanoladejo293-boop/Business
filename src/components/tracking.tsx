@@ -28,7 +28,7 @@ const Tracking = () => {
           <p className={styles.subtitle}>
             With Finos CRM's robust automation tools, propel streamline your business operations,
             enhance customer relationships.
-          </p>
+          </p>4
         </div>
 
         <div className={styles.grid}>
