@@ -123,7 +123,7 @@
 
 .heroGrid {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(330px, 0.75fr);
+  grid-template-columns: minmax(0, 1.35fr) minmax(320px, 0.85fr);
   gap: 36px;
   align-items: center;
   margin-top: 48px;
@@ -135,11 +135,20 @@
 
 @media (max-width: 1040px) {
   .heroGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1.25fr) minmax(240px, 0.85fr);
+    gap: 32px;
+    align-items: start;
   }
 
   .heroImage {
-    order: -1;
+    justify-content: flex-end;
+    align-self: start;
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .heroImage img {
+    max-width: 360px;
   }
 
   .heroText {
@@ -149,7 +158,19 @@
 
 @media (max-width: 860px) {
   .heroGrid {
+    grid-template-columns: minmax(0, 1.2fr) minmax(220px, 0.8fr);
     gap: 28px;
+    align-items: start;
+  }
+
+  .heroImage {
+    justify-content: center;
+    max-width: 360px;
+    width: 100%;
+  }
+
+  .heroImage img {
+    max-width: 320px;
   }
 
   .heroText {
@@ -163,11 +184,41 @@
 
 @media (max-width: 720px) {
   .heroGrid {
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 0.9fr);
+    gap: 20px;
+    align-items: start;
+  }
+
+  .heroImage {
+    justify-content: center;
+    max-width: 320px;
+    width: 100%;
+  }
+
+  .heroImage img {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 520px) {
+  .heroGrid {
+    grid-template-columns: 1fr;
     gap: 22px;
+    align-items: flex-start;
+  }
+
+  .heroImage {
+    order: 2;
+    width: 100%;
+  }
+
+  .heroText {
+    max-width: 100%;
   }
 
   .heroImage img {
     max-width: 100%;
+    height: auto;
   }
 }
 
@@ -284,13 +335,23 @@
 .heroImage {
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
 }
 
 .heroImage img {
   width: 100%;
-  max-width: 420px;
+  max-width: 520px;
+  height: auto;
   border-radius: 32px;
   box-shadow: 0 40px 120px rgba(15, 23, 42, 0.15);
+  transform: translateY(-16px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.heroImage img:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 50px 140px rgba(15, 23, 42, 0.18);
 }
 
 .statsCard {
@@ -320,14 +381,6 @@
 }
 
 @media (max-width: 1040px) {
-  .heroGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .heroImage {
-    order: -1;
-  }
-
   .statsCard {
     grid-template-columns: 1fr;
   }
@@ -350,6 +403,25 @@
 @media (max-width: 720px) {
   .container {
     padding: 24px 20px 36px;
+  }
+
+  .heroGrid {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
+
+  .heroImage {
+    order: 2;
+    width: 100%;
+  }
+
+  .heroText {
+    max-width: 100%;
+  }
+
+  .heroImage img {
+    max-width: 100%;
+    height: auto;
   }
 
   .nav {

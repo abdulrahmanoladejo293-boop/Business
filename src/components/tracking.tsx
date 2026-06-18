@@ -26,7 +26,7 @@ const Tracking = () => {
         <div className={styles.header}>
           <h2 className={styles.title}>Unlock the power of Finos CRM with key features</h2>
           <p className={styles.subtitle}>
-            With Finos CRM’s robust automation tools, propel streamline your business operations,
+            With Finos CRM's robust automation tools, propel streamline your business operations,
             enhance customer relationships.
           </p>
         </div>
@@ -37,7 +37,7 @@ const Tracking = () => {
               Streamlined and automated processes for managing potential customer leads
             </h3>
             <p className={styles.copyText}>
-              Leverage Finos CRM’s powerful automation tools to optimize operations,
+              Leverage Finos CRM's powerful automation tools to optimize operations,
               strengthen customer relationships, and accelerate growth.
             </p>
 
