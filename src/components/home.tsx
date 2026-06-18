@@ -12,6 +12,14 @@ const avatars = [avatar1, avatar2, avatar3, avatar4, avatar5]
 const Home = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  const handleScroll = (targetId: string) => {
+    setMenuOpen(false)
+    const section = document.getElementById(targetId)
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+  }
+
   return (
     <section className={styles.hero} id="home">
       <div className={styles.container}>
@@ -28,21 +36,21 @@ const Home = () => {
           </button>
 
           <nav className={`${styles.links} ${menuOpen ? styles.open : ''}`}>
-            <a href="#home" onClick={() => setMenuOpen(false)}>
+            <button type="button" className={styles.linkButton} onClick={() => handleScroll('home')}>
               Home
-            </a>
-            <a href="#tracking" onClick={() => setMenuOpen(false)}>
+            </button>
+            <button type="button" className={styles.linkButton} onClick={() => handleScroll('tracking')}>
               Features
-            </a>
-            <a href="#resources" onClick={() => setMenuOpen(false)}>
+            </button>
+            <button type="button" className={styles.linkButton} onClick={() => handleScroll('resources')}>
               Resources
-            </a>
-            <a href="#pricing" onClick={() => setMenuOpen(false)}>
+            </button>
+            <button type="button" className={styles.linkButton} onClick={() => handleScroll('pricing')}>
               Pricing
-            </a>
-            <a href="#info" onClick={() => setMenuOpen(false)}>
+            </button>
+            <button type="button" className={styles.linkButton} onClick={() => handleScroll('info')}>
               Info
-            </a>
+            </button>
           </nav>
 
           <div className={styles.actions}>
