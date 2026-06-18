@@ -21,17 +21,14 @@ const features = [
 
 const Tracking = () => {
   return (
-    <section className={styles.trackingSection}>
+    <section className={styles.trackingSection} id="tracking">
       <div className={styles.container}>
         <div className={styles.header}>
           <h2 className={styles.title}>Unlock the power of Finos CRM with key features</h2>
           <p className={styles.subtitle}>
             With Finos CRM's robust automation tools, propel streamline your business operations,
             enhance customer relationships.
-          </p>4
-        </div>
-
-        <div className={styles.grid}>
+          </p>
           <div className={styles.copy}>
             <h3 className={styles.heading}>
               Streamlined and automated processes for managing potential customer leads

@@ -12,7 +12,7 @@ const logos = [
 
 const SectionTwo = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id="resources">
       <div className={styles.content}>
         <div className={styles.header}>
           <h2>Integrate with the tools you already use</h2>

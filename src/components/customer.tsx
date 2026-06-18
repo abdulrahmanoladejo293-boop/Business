@@ -31,7 +31,7 @@ const cards = [
 
 const Customer = () => {
   return (
-    <section className={styles.customerSection}>
+    <section className={styles.customerSection} id="info">
       <div className={styles.container}>
         <div className={styles.header}>
           <h2>A thriving business hub designed for the expansion</h2>

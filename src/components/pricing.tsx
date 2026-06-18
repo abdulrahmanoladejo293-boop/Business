@@ -44,7 +44,7 @@ const pricingPlans = [
 
 export default function Pricing() {
   return (
-    <section className={styles.pricingSection}>
+    <section className={styles.pricingSection} id="pricing">
       <div className={styles.header}>
         <h2>Our Best Pricing</h2>
 

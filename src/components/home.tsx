@@ -13,7 +13,7 @@ const Home = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id="home">
       <div className={styles.container}>
         <header className={styles.nav}>
           <span className={styles.brand}>FINOS</span>
@@ -28,11 +28,21 @@ const Home = () => {
           </button>
 
           <nav className={`${styles.links} ${menuOpen ? styles.open : ''}`}>
-            <a href="#">Home</a>
-            <a href="#">Features</a>
-            <a href="#">Resources</a>
-            <a href="#">Pricing</a>
-            <a href="#">Info</a>
+            <a href="#home" onClick={() => setMenuOpen(false)}>
+              Home
+            </a>
+            <a href="#tracking" onClick={() => setMenuOpen(false)}>
+              Features
+            </a>
+            <a href="#resources" onClick={() => setMenuOpen(false)}>
+              Resources
+            </a>
+            <a href="#pricing" onClick={() => setMenuOpen(false)}>
+              Pricing
+            </a>
+            <a href="#info" onClick={() => setMenuOpen(false)}>
+              Info
+            </a>
           </nav>
 
           <div className={styles.actions}>
