@@ -455,28 +455,41 @@
     gap: 14px;
     width: 100%;
     display: none;
-    padding: 18px 20px;
-    background: rgba(255, 255, 255, 0.95);
-    border-radius: 18px;
-    box-shadow: 0 20px 80px rgba(15, 23, 42, 0.08);
+    padding: 22px 22px 18px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(238, 248, 255, 0.96));
+    border: 1px solid rgba(59, 130, 246, 0.15);
+    border-radius: 24px;
+    box-shadow: 0 28px 90px rgba(15, 23, 42, 0.14);
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     z-index: 10;
     margin-top: 12px;
+    backdrop-filter: blur(12px);
   }
 
   .links button {
     width: 100%;
-    padding: 12px 0;
-    border-radius: 12px;
-    background: rgba(248, 250, 252, 0.9);
+    padding: 14px 16px;
+    border-radius: 16px;
+    background: rgba(248, 250, 252, 0.95);
     text-align: left;
+    color: var(--text);
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+
+  .links button:hover {
+    background: rgba(59, 130, 246, 0.08);
+    color: #0f172a;
   }
 
   .mobileActions {
     display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 18px;
+    width: 100%;
   }
 
   .actions {
@@ -487,14 +500,26 @@
   .signup {
     width: 100%;
     padding: 14px 0;
+    border-radius: 16px;
   }
 
   .login {
     background: rgba(17, 24, 39, 0.08);
+    color: var(--text);
   }
 
   .signup {
-    background: var(--button);
+    background: #2563eb;
+    color: #ffffff;
+  }
+
+  .mobileActions .login:hover,
+  .links button:hover {
+    background: rgba(59, 130, 246, 0.12);
+  }
+
+  .mobileActions .signup:hover {
+    background: #1d4ed8;
   }
 
   .actions {
