@@ -2,30 +2,31 @@
   position: relative;
   padding: 72px 24px 32px;
   background: linear-gradient(180deg, #ffffff 0%, #f6fbff 100%);
-  overflow: hidden;
+  overflow: visible;
 }
 
 .footer::after {
   content: 'FINOS';
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: 45%;
   transform: translate(-50%, -50%);
   color: rgba(17, 24, 39, 0.14);
-  font-size: clamp(4.5rem, 10vw, 7rem);
+  font-size: clamp(3.5rem, 10vw, 6rem);
   font-weight: 800;
   letter-spacing: 0.25em;
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
   z-index: 0;
-  max-width: 100%;
+  width: 100%;
   text-align: center;
-  overflow: hidden;
+  display: block;
 }
 
 .wrapper {
   position: relative;
+  z-index: 1;
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 16px;
@@ -194,8 +195,9 @@
   }
 
   .footer::after {
-    font-size: 5.5rem;
-    transform: translate(-50%, -20%);
+    font-size: 4.5rem;
+    transform: translate(-50%, -30%);
+    opacity: 0.12;
   }
 
   .heading h2 {
