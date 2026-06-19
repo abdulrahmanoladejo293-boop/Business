@@ -9,17 +9,16 @@
   content: 'FINOS';
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -10%);
-  color: rgba(17, 24, 39, 0.05);
-  font-size: 12rem;
+  top: 55%;
+  transform: translate(-50%, -45%);
+  color: rgba(17, 24, 39, 0.08);
+  font-size: clamp(6rem, 18vw, 10rem);
   font-weight: 800;
   letter-spacing: 0.35em;
   white-space: nowrap;
   pointer-events: none;
   user-select: none;
-  max-width: 100%;
-  overflow: hidden;
+  z-index: 0;
 }
 
 .wrapper {
