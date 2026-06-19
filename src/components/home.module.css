@@ -68,6 +68,13 @@
   gap: 14px;
 }
 
+.mobileActions {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
 .menuButton {
   display: none;
   border: none;
@@ -460,11 +467,34 @@
     margin-top: 12px;
   }
 
-  .links a {
+  .links button {
     width: 100%;
     padding: 12px 0;
     border-radius: 12px;
     background: rgba(248, 250, 252, 0.9);
+    text-align: left;
+  }
+
+  .mobileActions {
+    display: flex;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .login,
+  .signup {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  .login {
+    background: rgba(17, 24, 39, 0.08);
+  }
+
+  .signup {
+    background: var(--button);
   }
 
   .actions {

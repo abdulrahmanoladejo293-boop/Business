@@ -51,6 +51,11 @@ const Home = () => {
             <button type="button" className={styles.linkButton} onClick={() => handleScroll('info')}>
               Info
             </button>
+
+            <div className={styles.mobileActions}>
+              <button className={styles.login}>Log in</button>
+              <button className={styles.signup}>Sign Up</button>
+            </div>
           </nav>
 
           <div className={styles.actions}>
